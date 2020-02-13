@@ -1,29 +1,26 @@
-# README #
+# Weather Journal App #
+Simple web page that uses open source Web API to tell user a temperature and associated city name once he/she supply in zip code
 
-This README would normally document whatever steps are necessary to get your application up and running.
+# Getting Stared
+* Clone the project file
+* Unzip the file to your working place
 
-### What is this repository for? ###
+# Prerequest
+* Any Web browser
+* Any text editor-preferably Vscode editor
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+# Introduction
+This is an asynchronous web app that uses Web API and user data to dynamically update the UI in a Weather Journal application.
 
-### How do I get set up? ###
+Project Files
+# Technologies and tools 
+* Html5
+* Css
+* Javascript
+*Nodejs 
+*Api key(sign up to open weather map)
+*Npm
+*Express
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+# Aknowledgements
+1) Udacity.com

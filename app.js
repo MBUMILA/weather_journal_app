@@ -14,13 +14,11 @@ const getData = async url => {
   const data = await result.json();
   return data;
 };
-
 const postData = async (url, postData) => {
   let res = await fetch(url, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
-       
+      "Content-Type": "application/json",  
     },
     body: JSON.stringify(postData)
   });
@@ -33,30 +31,17 @@ const postData = async (url, postData) => {
     console.log("error", 'Bad request!');
   }
 }
-  
-
-
 const updateUI = updateData => {
   document.getElementById("temp").innerHTML = getResult.main.temp;
   document.getElementById("content").innerHTML = updateData.name;
   document.getElementById("feeling").innerHTML = updateData.feelings;
   document.getElementById("date").innerHTML = newDate;
-
 };
 
 document.getElementById("generate").addEventListener("click", async () => {
   const zipData = document.getElementById('zip').value;
-
   const feelingValue = document.getElementById("feelings").value;
-
   const getResult = await getData(baseURL + zipData + apiKey);
-  //console.log(getResult.main.temp, "   ", getResult.name ," ",feelingValue);
-  document.getElementById("temp").innerHTML = "Temperatue:"+" "+ getResult.main.temp + "&deg;C";
-  document.getElementById("content").innerHTML = "City name:"+" "+getResult.name;
-  document.getElementById("feeling").innerHTML = "The feeling:"+" "+ feelingValue;
-  ;
-  document.getElementById("date").innerHTML = "Today's date is: "+newDate ;
-
 
 const anObject = {
     temperature: getResult.main.temp,

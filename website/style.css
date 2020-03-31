@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 background-position:center;
-    color:white;
+    
     justify-content: center;
     grid-gap: 1em;
     font-weight: bold;
@@ -55,7 +55,7 @@ div.holder.entry{
     padding-top: 70px;
     font-size: 60px;
     font-weight: bolder;
-    color :whitesmoke;
+    color :rebeccapurple;
 
 }
 
@@ -75,6 +75,7 @@ div.container{
 label {
     display: block;
     font-size: 27px;
+color:rebeccapurple;
 }
 
 input {
